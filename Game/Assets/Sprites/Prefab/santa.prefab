@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 5929183108407846811}
   - component: {fileID: 7383084282309949325}
   m_Layer: 0
-  m_Name: santa 1
+  m_Name: santa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
