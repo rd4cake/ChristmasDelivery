@@ -98,11 +98,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 61
-      width: 25
-      height: 32
-    spriteID: d2dcfd1b834def747b9e2afdd2d5579a
+      x: 148
+      y: 4
+      width: 100
+      height: 128
+    spriteID: dae1d88c8d002ec498ab7b49e88ed6ca
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2, y: 57}
+    uvTransform: {x: 140, y: -12}
   - name: R arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -120,11 +120,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 43
-      width: 16
-      height: 50
-    spriteID: e6719818f5a1a244cab0bf661e8f4e5e
+      x: 156
+      y: 208
+      width: 64
+      height: 200
+    spriteID: 4a5cee97357d09d4ca5bf780ea1e7db7
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -134,7 +134,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 11, y: 40}
+    uvTransform: {x: 16, y: 196}
   - name: Head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -144,9 +144,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 34
-      height: 49
-    spriteID: d6139f6f86c2f0548b9e9a8b29a8eb0d
+      width: 136
+      height: 196
+    spriteID: 6157027f7bb76214686250c11da1597e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -5, y: -9}
+    uvTransform: {x: -32, y: -48}
   - name: body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -164,11 +164,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 4
-      width: 36
-      height: 31
-    spriteID: e7eedfe85971d7d49ae5645c7a3902c8
+      x: 4
+      y: 208
+      width: 144
+      height: 124
+    spriteID: d5e47a9b2d02d684e9dd376c3cd2fc3b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -178,7 +178,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 34, y: -9}
+    uvTransform: {x: -44, y: 156}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -203,18 +203,18 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 0
+  documentPivot: {x: 0.4, y: 0.5}
+  documentAlignment: 9
   importHiddenLayers: 0
-  importedTextureWidth: 128
-  importedTextureHeight: 128
-  documentSize: {x: 64, y: 64}
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 256, y: 256}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 128
-  textureActualHeight: 128
+  textureActualWidth: 256
+  textureActualHeight: 512
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
@@ -224,30 +224,30 @@ ScriptedImporter:
     spriteName: L arm
     isGroup: 0
     parentIndex: -1
-    spriteID: d2dcfd1b834def747b9e2afdd2d5579a
+    spriteID: dae1d88c8d002ec498ab7b49e88ed6ca
     layerID: 12
-    mosaicPosition: {x: 4, y: 61}
+    mosaicPosition: {x: 148, y: 4}
   - name: R arm
     spriteName: R arm
     isGroup: 0
     parentIndex: -1
-    spriteID: e6719818f5a1a244cab0bf661e8f4e5e
+    spriteID: 4a5cee97357d09d4ca5bf780ea1e7db7
     layerID: 11
-    mosaicPosition: {x: 46, y: 43}
+    mosaicPosition: {x: 156, y: 208}
   - name: Head
     spriteName: Head
     isGroup: 0
     parentIndex: -1
-    spriteID: d6139f6f86c2f0548b9e9a8b29a8eb0d
+    spriteID: 6157027f7bb76214686250c11da1597e
     layerID: 8
     mosaicPosition: {x: 4, y: 4}
   - name: body
     spriteName: body
     isGroup: 0
     parentIndex: -1
-    spriteID: e7eedfe85971d7d49ae5645c7a3902c8
+    spriteID: d5e47a9b2d02d684e9dd376c3cd2fc3b
     layerID: 9
-    mosaicPosition: {x: 46, y: 4}
+    mosaicPosition: {x: 4, y: 208}
   characterData:
     bones: []
     parts: []
