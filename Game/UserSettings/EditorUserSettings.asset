@@ -15,12 +15,7 @@ EditorUserSettings:
   m_SemanticMergeMode: 2
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
-<<<<<<< HEAD
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
-=======
-  m_VCOverlayIcons: 1
-  m_VCAllowAsyncUpdate: 0
->>>>>>> 81611cd50a5c9202d45a71e9e915f7f8f871ab79
