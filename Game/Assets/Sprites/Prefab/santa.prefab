@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7986957214257571092}
   - component: {fileID: 6110667441687682018}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: R arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897782856686347787}
   - component: {fileID: 44806153635877288}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6112644323773451441}
   - component: {fileID: 2641290381080059213}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: L arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 932020890813143395}
   - component: {fileID: 6075203648133362018}
   - component: {fileID: 6389309497583694832}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Santa
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d78393579ba814685203b0cb590b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mMoveSpeed: 20
   mTransform: {fileID: 3841504509165557180}
   mRigidbody: {fileID: 6075203648133362018}
 --- !u!50 &6075203648133362018
@@ -376,7 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514918691969321410}
   - component: {fileID: 4986966201774183661}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
