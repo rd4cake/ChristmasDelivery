@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Bruh moemnet");
-    }
+    [Header("Variables")]
+    private float mMoveSpeed = 7f;
+    Vector2 mMovement;
 
-    // Update is called once per frame
+    [Header("Components")]
+    public Transform mTransform;
+    public Rigidbody2D mRigidbody;
+
     void Update()
     {
-        
+        mMovement.x = Input.GetAxisRaw("Horizontal");
+        mMovement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    private void FixedUpdate()
+    {
+        mRigidbody.velocity = mMovement * mMoveSpeed;
+        //transform.Translate(mMovement * mMoveSpeed * Time.deltaTime, Space.World);
+        transform.up = -mRigidbody.velocity.normalized;
     }
 }
