@@ -257,12 +257,18 @@ GameObject:
   m_Component:
   - component: {fileID: 5929183108407846811}
   - component: {fileID: 7383084282309949325}
+<<<<<<< HEAD
   - component: {fileID: 791699626}
   - component: {fileID: 8582648301037996562}
   - component: {fileID: 8845099957144575711}
   m_Layer: 6
   m_Name: santa
   m_TagString: Player
+=======
+  m_Layer: 0
+  m_Name: santa
+  m_TagString: Untagged
+>>>>>>> 57713c944e49b6beb911e4b13a960c538f539a6b
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
