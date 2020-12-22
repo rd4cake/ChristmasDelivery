@@ -112,7 +112,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 20
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10749c73b67fde2428f4839bc3648a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTarget: {fileID: 5929183108407846811, guid: 310cf2f4be54e0e4bbbe98f9b9853c00, type: 3}
+  mTarget: {fileID: 0}
 --- !u!114 &6966270641292383982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 5929183108407846811, guid: 310cf2f4be54e0e4bbbe98f9b9853c00, type: 3}
+  target: {fileID: 0}
 --- !u!1001 &8006629419360601932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,6 +188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443293257209624563, guid: 9b79ebb2a1b550d449f4b9f06015e13b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 6443293257209624563, guid: 9b79ebb2a1b550d449f4b9f06015e13b,
         type: 3}
@@ -242,12 +247,12 @@ PrefabInstance:
     - target: {fileID: 7762758051579309106, guid: 9b79ebb2a1b550d449f4b9f06015e13b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.606
+      value: -5.268653
       objectReference: {fileID: 0}
     - target: {fileID: 7762758051579309106, guid: 9b79ebb2a1b550d449f4b9f06015e13b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.831
+      value: 0.65617585
       objectReference: {fileID: 0}
     - target: {fileID: 7762758051579309106, guid: 9b79ebb2a1b550d449f4b9f06015e13b,
         type: 3}

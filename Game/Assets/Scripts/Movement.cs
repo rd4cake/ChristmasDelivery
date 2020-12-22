@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [Header("Variables")]
-    private float mMoveSpeed = 7f;
+    public float mMoveSpeed = 51f;
     Vector2 mMovement;
 
     [Header("Components")]
