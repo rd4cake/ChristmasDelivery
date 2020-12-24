@@ -12,6 +12,10 @@ public class Movement : MonoBehaviour
     public Transform mTransform;
     public Rigidbody2D mRigidbody;
 
+    void Start()
+    {
+        mRigidbody = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         mMovement.x = Input.GetAxisRaw("Horizontal");
@@ -20,7 +24,7 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        mRigidbody.velocity = mMovement * mMoveSpeed;
+        mRigidbody.velocity = new Vector2(mMovement.x*mMoveSpeed,mMovement.y*mMoveSpeed);
         //transform.Translate(mMovement * mMoveSpeed * Time.deltaTime, Space.World);
         transform.up = -mRigidbody.velocity.normalized;
     }
