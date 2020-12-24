@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &476775508806479057
+--- !u!1001 &4106313815990631367
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -66,12 +66,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0f81b8327770dd940ad3a3b05671b446,
+      objectReference: {fileID: 21300000, guid: f49af3b4c2eabeb4ea269b5daabe7133,
         type: 3}
     - target: {fileID: 7153409462529734078, guid: 2e02ad38c4ff3cb4e9bda5342816bb2e,
         type: 3}
       propertyPath: m_Name
-      value: Building3-Purple
+      value: Building3-Yellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e02ad38c4ff3cb4e9bda5342816bb2e, type: 3}
