@@ -24,8 +24,8 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        mRigidbody.velocity = new Vector2(mMovement.x*mMoveSpeed,mMovement.y*mMoveSpeed);
+        mRigidbody.velocity = new Vector2(mMovement.x * mMoveSpeed, mMovement.y * mMoveSpeed);
         //transform.Translate(mMovement * mMoveSpeed * Time.deltaTime, Space.World);
-        transform.up = -mRigidbody.velocity.normalized;
+        transform.up = -mRigidbody.velocity;
     }
 }
