@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public Transform mPresent;
-    public Transform holder;
+    public Transform mHolder;
     bool pickup = false;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,7 @@ public class Pickup : MonoBehaviour
         GameObject present = GameObject.FindWithTag("Present");
         if (pickup==true)
         {
-            present.transform.position = holder.position;
+            present.transform.position = mHolder.position;
             Debug.Log(pickup);
         }
     }
