@@ -6813,6 +6813,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 739361703}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &810089809 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4083811572401538339, guid: 1baae95fa2ac9ca4485093da0db8d328,
+    type: 3}
+  m_PrefabInstance: {fileID: 104303425824059272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &810089810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810089809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54295c163a0f94b45be62f0862722fa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mHolder: {fileID: 1724627169}
 --- !u!4 &813587162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293026333720194921, guid: 926b7cc95b842594bbf9881aa83a51f1,
@@ -8212,7 +8231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190515123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.4, y: 1.4, z: -10}
+  m_LocalPosition: {x: 31.952232, y: 1.4000019, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10992,6 +11011,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 913880700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1724627168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724627169}
+  m_Layer: 7
+  m_Name: Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724627169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724627168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14, y: -2.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3764249073679776308}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1766899570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6609747864753784670, guid: ed1bb3a64b0e4dd4d83f16f24d24c3e7,
