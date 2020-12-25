@@ -25,7 +25,7 @@ public class PresentIndicator : MonoBehaviour
         }
         else
         {
-            target.SetActive(false);
+            arrow.SetActive(false);
         }
     }
 }

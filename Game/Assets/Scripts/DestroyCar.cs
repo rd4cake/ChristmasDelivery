@@ -4,14 +4,22 @@ using UnityEngine;
 
 public class DestroyCar : MonoBehaviour
 {
+    Rigidbody2D mRigidbody;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public Vector2 mMovement;
+
+    private void Start()
     {
-        if (collision.gameObject.tag == "WorldBorder")
-        {
+        mRigidbody = GetComponent<Rigidbody2D>();
+
+        //Car destroys itself after 8 seconds
+        LeanTween.delayedCall(gameObject, 4f, () => {
             Destroy(gameObject);
+        });
+    }
 
-        }
-
+    private void FixedUpdate()
+    {
+        mRigidbody.velocity = mMovement;
     }
 }

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -5278095452573522652}
   - component: {fileID: -4833743738417852762}
   - component: {fileID: 4588292212384103398}
-  m_Layer: 0
-  m_Name: car
+  m_Layer: 9
+  m_Name: CarRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0606184, y: -0.08393288}
+  m_Offset: {x: 0.038263947, y: -0.070117295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7859516, y: 0.9559479}
+  m_Size: {x: 1.5922115, y: 0.76003397}
   m_EdgeRadius: 0
 --- !u!114 &4588292212384103398
 MonoBehaviour:
@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7350ae940be9547b1b65f59d2c2c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mMovement: {x: 30, y: 0}
