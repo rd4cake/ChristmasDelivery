@@ -75,7 +75,7 @@ PrefabInstance:
     - target: {fileID: 4588292212384103398, guid: bb26d70e2d4759d47aa54573b52e7f5b,
         type: 3}
       propertyPath: mMovement.y
-      value: -30
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 8410081699026290363, guid: bb26d70e2d4759d47aa54573b52e7f5b,
         type: 3}

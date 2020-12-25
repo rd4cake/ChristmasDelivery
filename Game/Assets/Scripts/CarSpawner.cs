@@ -13,7 +13,7 @@ public class CarSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("CreateCar", 2.0f, 1.7f);
+        InvokeRepeating("CreateCar", 2.0f, 7f);
     }
 
     void CreateCar()

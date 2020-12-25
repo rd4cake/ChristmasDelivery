@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7350ae940be9547b1b65f59d2c2c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mMovement: {x: 30, y: 0}
+  mMovement: {x: 35, y: 0}

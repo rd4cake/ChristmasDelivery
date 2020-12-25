@@ -5,28 +5,28 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public Transform mHolder;
-    bool pickup = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    GameObject mPresent;
+    [HideInInspector]
+    public bool mIsPickedUp;
+
+    private void Update()
     {
-        GameObject present = GameObject.FindWithTag("Present");
-        if (pickup==true)
+        if (mIsPickedUp)
         {
-            present.transform.position = mHolder.position;
-            Debug.Log(pickup);
+            mPresent.transform.position = mHolder.position;
+        }
+        else
+        {
+            return;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Present")
-        {
-            pickup = true;
+        if (collision.gameObject.tag == "Present") 
+        { 
+            mPresent = collision.gameObject;
+            mIsPickedUp = true;
         }
 
     }

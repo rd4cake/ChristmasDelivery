@@ -13,7 +13,7 @@ public class DestroyCar : MonoBehaviour
         mRigidbody = GetComponent<Rigidbody2D>();
 
         //Car destroys itself after 8 seconds
-        LeanTween.delayedCall(gameObject, 4f, () => {
+        LeanTween.delayedCall(gameObject, 7f, () => {
             Destroy(gameObject);
         });
     }
