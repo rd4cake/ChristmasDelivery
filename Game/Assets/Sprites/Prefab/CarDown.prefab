@@ -82,5 +82,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarDown
       objectReference: {fileID: 0}
+    - target: {fileID: 8410081699026290363, guid: bb26d70e2d4759d47aa54573b52e7f5b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb26d70e2d4759d47aa54573b52e7f5b, type: 3}
