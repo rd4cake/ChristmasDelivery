@@ -1,29 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DeliverySpot : MonoBehaviour
 {
-    public GameObject[] mDeliveryPoints;
-    private bool mIsPickedUp;
-    private bool mSpawnDeliverPoint;
-
-    public Pickup mPickUp;
-
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        mIsPickedUp = mPickUp.mIsPickedUp;
-        if (mIsPickedUp && !mSpawnDeliverPoint)
+        if (collision.gameObject.tag == "Player")
         {
-            int randHouse = Random.Range(0, mDeliveryPoints.Length);
-            mSpawnDeliverPoint = true;
-            mDeliveryPoints[randHouse].SetActive(true);
+            Pickup pickUp = collision.gameObject.GetComponent<Pickup>();
+            pickUp.DropOff();
         }
     }
 }
