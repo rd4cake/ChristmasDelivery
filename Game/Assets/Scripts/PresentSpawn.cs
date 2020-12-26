@@ -8,13 +8,7 @@ public class PresentSpawn : MonoBehaviour
     GameObject mPresentcheck;
     public Collider2D[] mColliders;
     public LayerMask mMask;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Vector3 Newpos = new Vector3(Random.Range(-13f, 103f), Random.Range(28f, -60f), 0);

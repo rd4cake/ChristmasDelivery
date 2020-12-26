@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Present
   - WorldBorder
+  - DeliverySpot
   layers:
   - Default
   - TransparentFX
