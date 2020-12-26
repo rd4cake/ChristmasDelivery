@@ -120,6 +120,24 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
+--- !u!114 &1787176388148414009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809924837935732145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03c94c3f31ac54f45a9e6579e118d247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mBodyparts:
+  - {fileID: 4792143578041417372, guid: 7ec318a04c363bb4ebcd58a941951d62, type: 3}
+  - {fileID: 7602018647279557737, guid: d8211b8b24b11ef48b999ff816e9c1e4, type: 3}
+  - {fileID: 1100285795694382205, guid: 108abd8558ff04745b619331215a53d3, type: 3}
+  - {fileID: 3154118029925318996, guid: 5f28fb314532153428ccbf6c088ddf97, type: 3}
+  Blood: {fileID: 0}
 --- !u!114 &8644769997105431522
 MonoBehaviour:
   m_ObjectHideFlags: 0
