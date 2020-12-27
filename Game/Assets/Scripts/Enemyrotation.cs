@@ -19,7 +19,10 @@ public class Enemyrotation : MonoBehaviour
 
     void Rotation()
     {
-        Vector2 position = mTarget.transform.position - transform.position;
-        transform.up = position;
+        if (mTarget != null)
+        {
+            Vector2 position = mTarget.transform.position - transform.position;
+            transform.up = position;
+        }
     }
 }

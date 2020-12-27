@@ -10,7 +10,10 @@ public class EnemyDestination : MonoBehaviour
     {
         var mAIDestinationSetter = GetComponent<AIDestinationSetter>();
         mPlayer = GameObject.FindWithTag("Player");
-        mAIDestinationSetter.target = mPlayer.transform;
+        if (mPlayer != null)
+        {
+            mAIDestinationSetter.target = mPlayer.transform;
+        }
     }
 
     // Update is called once per frame
