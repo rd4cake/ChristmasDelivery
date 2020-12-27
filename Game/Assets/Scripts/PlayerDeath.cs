@@ -6,14 +6,20 @@ public class PlayerDeath : MonoBehaviour
 {
     public GameObject[] mBodyparts;
     public GameObject Blood;
-    GameObject nNewblood;
-    GameObject nNewbodyparts;
+    private GameObject mAudioManager;
+
+    private void Start()
+    {
+        mAudioManager = GameObject.Find("AudioManager");
+        Debug.Log(mAudioManager);
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag=="Car")
         {
-            if(gameObject.tag=="Player")
+            mAudioManager.GetComponent<AudioSource>().Play();
+            if (gameObject.tag=="Player")
             {
                 gameObject.SetActive(false);
             }
