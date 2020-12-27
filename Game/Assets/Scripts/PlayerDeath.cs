@@ -6,13 +6,12 @@ public class PlayerDeath : MonoBehaviour
 {
     public GameObject[] mBodyparts;
     public GameObject Blood;
-    GameObject nNewblood;
-    GameObject nNewbodyparts;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag=="Car")
         {
+<<<<<<< HEAD
             if(gameObject.tag=="Player")
             {
                 gameObject.SetActive(false);
@@ -22,9 +21,11 @@ public class PlayerDeath : MonoBehaviour
                 Destroy(gameObject);
             }
 
+=======
+            Destroy(gameObject);
+>>>>>>> 517562b07cb741ee74dff0bed8d1b7dfb0309782
             Spawnparts();
-            GameObject nNewblood = Instantiate(Blood, transform.position, Quaternion.identity);
-            Destroy(nNewblood, 2f);
+            Instantiate(Blood, transform.position, Quaternion.identity);
         }
     }
 
@@ -32,10 +33,8 @@ public class PlayerDeath : MonoBehaviour
     {
         for (int i = 0; i < mBodyparts.Length; i++)
         {
-            GameObject nNewbodyparts = Instantiate(mBodyparts[i], transform.position, Quaternion.identity);
-            Destroy(nNewbodyparts, 2f);
+            Instantiate(mBodyparts[i], transform.position, Quaternion.identity);
         }
 
     }
-
 }
