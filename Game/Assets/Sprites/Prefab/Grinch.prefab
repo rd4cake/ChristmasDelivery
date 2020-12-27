@@ -349,8 +349,9 @@ GameObject:
   - component: {fileID: 296991068515891403}
   - component: {fileID: 296991068515891400}
   - component: {fileID: 296991068515891401}
+  - component: {fileID: 5952574561712948284}
   m_Layer: 0
-  m_Name: body 1
+  m_Name: Grinch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +364,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3154118029925318996}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.072527, y: 4.4465184, z: 0}
   m_LocalScale: {x: 1, y: -1, z: 1}
   m_Children:
@@ -539,3 +540,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &5952574561712948284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154118029925318996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d587819f68def54aafcace176f34707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

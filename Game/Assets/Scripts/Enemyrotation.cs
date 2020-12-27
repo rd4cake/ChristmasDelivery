@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Enemyrotation : MonoBehaviour
 {
-    public Transform mTarget;
+    GameObject mTarget;
     // Start is called before the first frame update
     void Start()
     {
-        
+        mTarget = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class Enemyrotation : MonoBehaviour
 
     void Rotation()
     {
-        Vector2 position = mTarget.position - transform.position;
+        Vector2 position = mTarget.transform.position - transform.position;
         transform.up = position;
     }
 }
