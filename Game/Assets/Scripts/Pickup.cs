@@ -5,6 +5,7 @@ public class Pickup : MonoBehaviour
     [Header("Game Objects")]
     public Transform mHolder;
     GameObject mPresent;
+    public GameObject mDeliveredText;
 
     [HideInInspector]
     public bool mIsPickedUp;
@@ -29,6 +30,10 @@ public class Pickup : MonoBehaviour
     }
     public void DropOff()
     {
+        LeanTween.scale(mDeliveredText, new Vector2(1,1), 1f);
+        LeanTween.delayedCall(gameObject, 1f, () => {
+            LeanTween.scale(mDeliveredText, new Vector2(0, 0), 1f);
+        });
         Destroy(mPresent);
         mIsPickedUp = false;
     }

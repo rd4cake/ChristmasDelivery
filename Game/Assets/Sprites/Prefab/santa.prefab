@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mHolder: {fileID: 1724627169}
+  mDeliveredText: {fileID: 0}
   mIsPickedUp: 0
   mDropOff: 0
 --- !u!114 &1525776018
