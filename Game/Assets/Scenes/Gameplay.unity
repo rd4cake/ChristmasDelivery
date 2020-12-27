@@ -9037,7 +9037,7 @@ GameObject:
   - component: {fileID: 862644441}
   - component: {fileID: 862644440}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Health Bar Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10288,7 +10288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159323847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.414274, y: 1.4000019, z: -10}
+  m_LocalPosition: {x: 29.310362, y: 1.4000019, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10821,6 +10821,7 @@ MonoBehaviour:
   mMaxhealth: 100
   mEnemydamage: 10
   mHealthbar: {fileID: 404180361}
+  mDamagecooldown: 1
 --- !u!1001 &1457806456
 PrefabInstance:
   m_ObjectHideFlags: 0
