@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 5952574561712948284}
   m_Layer: 0
   m_Name: Grinch
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
-  radius: 0.5
+  radius: 7.32
   height: 2
   repathRate: 0.5
   canSearch: 1

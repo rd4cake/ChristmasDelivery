@@ -24,7 +24,6 @@ public class PresentIndicator : MonoBehaviour
         {
             mArrowColor.color = red;
             target = GameObject.FindWithTag("DeliverySpot");
-            Debug.Log(target.transform.position);
             var dir = target.transform.position - transform.position;
             var angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
