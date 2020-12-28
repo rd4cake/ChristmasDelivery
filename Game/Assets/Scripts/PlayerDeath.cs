@@ -13,6 +13,25 @@ public class PlayerDeath : MonoBehaviour
        mAudioManager = GameObject.Find("AudioManager");
     }
 
+    private void Update()
+    {
+        if (gameObject.tag == "Player")
+        {
+            PlayerDamage playerDamage = GetComponent<PlayerDamage>();
+            if (playerDamage.mHealthBar.value==0)
+            {
+                Spawnparts();
+                Destroy(gameObject);
+                GameObject nNewblood = Instantiate(Blood, transform.position, Quaternion.identity);
+                Destroy(nNewblood, 2f);
+            }
+        }
+        if (GameObject.Find("Santa") == null)
+        {
+            Destroy(GameObject.FindWithTag("Enemy"));
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag=="Car")
