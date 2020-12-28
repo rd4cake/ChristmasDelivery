@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject mEnemy;
+    public GameObject[] mEnemy;
     public GameObject mPlayer;
     GameObject mPresentcheck;
     public Collider2D[] mColliders;
@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("Spawn", 5f, 1f);
+        InvokeRepeating("Spawn", 1f, 1f);
     }
     void Spawn()
     {
@@ -22,9 +22,10 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 Newpos = new Vector3(Random.Range(-13f, 103f), Random.Range(28f, -60f), 0);
             mColliders = Physics2D.OverlapCircleAll(Newpos, 3, mMask);
+            int type = Random.Range(0, 2);
             if (mColliders.Length == 0 && (transform.position - mPlayer.transform.position).magnitude > 10)
             {
-                Instantiate(mEnemy, Newpos, Quaternion.identity);
+                Instantiate(mEnemy[type], Newpos, Quaternion.identity);
                 condition = true;
             }
         }
