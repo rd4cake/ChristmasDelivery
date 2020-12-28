@@ -10,8 +10,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void Start()
     {
-        mAudioManager = GameObject.Find("AudioManager");
-        Debug.Log(mAudioManager);
+       mAudioManager = GameObject.Find("AudioManager");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

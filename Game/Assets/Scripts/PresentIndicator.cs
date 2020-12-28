@@ -24,10 +24,13 @@ public class PresentIndicator : MonoBehaviour
         {
             mArrowColor.color = red;
             target = GameObject.FindWithTag("DeliverySpot");
-            var dir = target.transform.position - transform.position;
-            var angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.up = dir;
+            if (target != null)
+            {
+                var dir = target.transform.position - transform.position;
+                var angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                transform.up = dir;
+            }
         }
         else if (GameObject.FindWithTag("Present") != null)
         {
