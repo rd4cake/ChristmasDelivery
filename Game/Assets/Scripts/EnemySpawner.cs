@@ -22,8 +22,12 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 Newpos = new Vector3(Random.Range(-13f, 103f), Random.Range(28f, -60f), 0);
             mColliders = Physics2D.OverlapCircleAll(Newpos, 3, mMask);
+<<<<<<< HEAD
             int type = Random.Range(0, 2);
             if (mColliders.Length == 0 && (transform.position - mPlayer.transform.position).magnitude > 10)
+=======
+            if (mColliders.Length == 0 && (transform.position - mPlayer.transform.position).magnitude > 100)
+>>>>>>> parent of ade3fa8... Revert "added highscore"
             {
                 Instantiate(mEnemy[type], Newpos, Quaternion.identity);
                 condition = true;
