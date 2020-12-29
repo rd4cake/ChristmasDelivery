@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Pickup : MonoBehaviour
 {
     [Header("Game Objects")]
@@ -13,6 +13,9 @@ public class Pickup : MonoBehaviour
     public bool mIsPickedUp;
     [HideInInspector]
     public bool mDropOff;
+
+    int score = 0;
+    public Text mText;
 
     private void Update()
     {
@@ -38,6 +41,8 @@ public class Pickup : MonoBehaviour
         LeanTween.delayedCall(gameObject, 1f, () => {
             LeanTween.scale(mDeliveredText, new Vector2(0, 0), 1f);
         });
+        score += 1;
+        mText.text = score.ToString();
         Destroy(mPresent);
         mIsPickedUp = false;
     }
