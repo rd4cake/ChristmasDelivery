@@ -62,9 +62,9 @@ public class PlayerDeath : MonoBehaviour
         if (gameObject.tag == "Player")
         {
             AudioManager.PlayAudioFile(1);
-            LeanTween.delayedCall(gameObject, 1f, () =>
+            LeanTween.delayedCall(gameObject, 1.2f, () =>
             {
-                LeanTween.scale(mGameOverPanel, new Vector2(1f, 1f), 1f);
+                LeanTween.scale(mGameOverPanel, new Vector2(1f, 1f), 1.2f);
             });
         }
 
