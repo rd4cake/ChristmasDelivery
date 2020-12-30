@@ -28,4 +28,11 @@ public class PlayerDamage : MonoBehaviour
             mHealthBar.value = 0;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Car")
+        {
+            AudioManager.PlayAudioFile(2);
+        }
+    }
 }
