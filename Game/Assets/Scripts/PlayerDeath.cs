@@ -36,7 +36,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if(collision.gameObject.tag=="Car")
         {
-            mAudioManager.GetComponent<AudioSource>().Play();
+            AudioManager.PlayAudioFile(0);
             if (gameObject.tag=="Player")
             {
                 gameObject.SetActive(false);
@@ -61,6 +61,7 @@ public class PlayerDeath : MonoBehaviour
         }
         if (gameObject.tag == "Player")
         {
+            AudioManager.PlayAudioFile(1);
             LeanTween.delayedCall(gameObject, 1f, () =>
             {
                 LeanTween.scale(mGameOverPanel, new Vector2(1f, 1f), 1f);
