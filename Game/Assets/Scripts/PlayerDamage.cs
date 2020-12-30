@@ -4,16 +4,18 @@ using UnityEngine.UI;
 public class PlayerDamage : MonoBehaviour
 {
     public Slider mHealthBar;
-    private float mEnemydamage = 0.2f;
-    private float mDamagecooldown = 1;
+    public AudioSource mOnHitSFX;
+    private float mEnemydamage = 0.201f;
+    private float mDamagecooldown = 0.5f;
     private float mNextdamage = 0;
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            if (mHealthBar.value > 0 && Time.time> mNextdamage)
+            if (mHealthBar .value > 0 && Time.time> mNextdamage)
             {
+                mOnHitSFX.Play();
                 mHealthBar.value -= mEnemydamage;
                 mNextdamage = Time.time + mDamagecooldown;
             }

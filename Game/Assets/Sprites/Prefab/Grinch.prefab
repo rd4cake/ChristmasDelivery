@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080236888}
   - component: {fileID: 1080236889}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Distancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.74
+  m_Radius: 1
 --- !u!1 &296991068937725519
 GameObject:
   m_ObjectHideFlags: 0

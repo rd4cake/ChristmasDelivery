@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
@@ -7,7 +5,8 @@ public class PlayerDeath : MonoBehaviour
     public GameObject[] mBodyparts;
     public GameObject Blood;
     private GameObject mAudioManager;
-
+    public GameObject mGameOverPanel;
+    public PlayerDamage mPlayerDamage;
     private void Start()
     {
        mAudioManager = GameObject.Find("AudioManager");
@@ -22,11 +21,10 @@ public class PlayerDeath : MonoBehaviour
 
         if(gameObject.tag=="Player")
         {
-            PlayerDamage playerDamage = GetComponent<PlayerDamage>();
-            if(playerDamage.mHealthBar.value==0)
+            if(mPlayerDamage.mHealthBar.value <=0)
             {
                 Spawnparts();
-                Destroy(gameObject);
+                gameObject.SetActive(false);
                 GameObject nNewblood = Instantiate(Blood, transform.position, Quaternion.identity);
                 Destroy(nNewblood, 2f);
             }
@@ -61,6 +59,14 @@ public class PlayerDeath : MonoBehaviour
             GameObject nNewbodyparts = Instantiate(mBodyparts[i], transform.position, Quaternion.identity);
             Destroy(nNewbodyparts, 2f);
         }
+        if (gameObject.tag == "Player")
+        {
+            LeanTween.delayedCall(gameObject, 1f, () =>
+            {
+                LeanTween.scale(mGameOverPanel, new Vector2(1f, 1f), 1f);
+            });
+        }
+
     }
 
 }
