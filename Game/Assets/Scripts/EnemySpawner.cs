@@ -12,10 +12,11 @@ public class EnemySpawner : MonoBehaviour
     public LayerMask mMask;
     bool condition = false;
     GameObject nNewEnemy;
+    public float mSpawntime=5f;
 
     private void Start()
     {
-        InvokeRepeating("Spawn", 5f, 1f);
+        InvokeRepeating("Spawn", 5f, mSpawntime);
     }
     void Spawn()
     {

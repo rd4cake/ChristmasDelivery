@@ -8,6 +8,7 @@ public class Pickup : MonoBehaviour
     public GameObject mDeliveredText;
     public AudioSource mPickUpSFX;
     public AudioSource mDeliveredSFX;
+    EnemySpawner mEnemySpawner;
 
     [HideInInspector]
     public bool mIsPickedUp;
@@ -43,6 +44,11 @@ public class Pickup : MonoBehaviour
         });
         score += 1;
         mText.text = score.ToString();
+        mEnemySpawner = GameObject.Find("EnemySpawner").GetComponent<EnemySpawner>();
+        if (mEnemySpawner.mSpawntime > 1)
+        {
+            mEnemySpawner.mSpawntime -= 0.5f;
+        }
         Destroy(mPresent);
         mIsPickedUp = false;
     }
