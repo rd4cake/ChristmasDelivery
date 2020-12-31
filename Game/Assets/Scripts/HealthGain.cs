@@ -11,12 +11,11 @@ public class HealthGain : MonoBehaviour
     {
         mPlayerDamage=GameObject.Find("Santa").GetComponent<PlayerDamage>();
     }
-
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.PlayAudioFile(4);
             mPlayerDamage.mHealthBar.value += mAmountgain;
             Destroy(gameObject);
         }

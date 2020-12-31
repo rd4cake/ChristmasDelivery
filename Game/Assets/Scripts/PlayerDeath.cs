@@ -4,13 +4,8 @@ public class PlayerDeath : MonoBehaviour
 {
     public GameObject[] mBodyparts;
     public GameObject Blood;
-    private GameObject mAudioManager;
     public GameObject mGameOverPanel;
     public PlayerDamage mPlayerDamage;
-    private void Start()
-    {
-       mAudioManager = GameObject.Find("AudioManager");
-    }
 
     private void Update()
     {
