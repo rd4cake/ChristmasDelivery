@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1697100196029963}
   - component: {fileID: -4847048831621431389}
   - component: {fileID: -2928528916460800846}
-  - component: {fileID: -1880816541442123269}
   - component: {fileID: 1837408104}
   m_Layer: 14
   m_Name: cookE
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697100196029962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5812, y: -6.4363, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1374498772785450107}
@@ -126,19 +125,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
---- !u!114 &-1880816541442123269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697100196029962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a7d412dd9c750b4caf96c25b81eaf0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mPlayerDamage: {fileID: 0}
 --- !u!95 &1837408104
 Animator:
   serializedVersion: 3
@@ -147,7 +133,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697100196029962}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bb6527835dd003443bbb6b96db59bd26, type: 2}
   m_CullingMode: 0

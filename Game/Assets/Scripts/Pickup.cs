@@ -27,7 +27,7 @@ public class Pickup : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Present") 
+        if (collision.gameObject.tag == "Present" && !mIsPickedUp) 
         {
             mPickUpSFX.Play();
             mPresent = collision.gameObject;
