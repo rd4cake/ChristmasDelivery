@@ -13813,10 +13813,10 @@ PrefabInstance:
       propertyPath: mGameOverPanel
       value: 
       objectReference: {fileID: 1310779787}
-    - target: {fileID: 2058875398426612845, guid: 1baae95fa2ac9ca4485093da0db8d328,
+    - target: {fileID: 2898185994833620061, guid: 1baae95fa2ac9ca4485093da0db8d328,
         type: 3}
-      propertyPath: m_Layer
-      value: 14
+      propertyPath: mOnHitSFX
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2898185994833620061, guid: 1baae95fa2ac9ca4485093da0db8d328,
         type: 3}

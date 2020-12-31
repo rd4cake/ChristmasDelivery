@@ -15,7 +15,7 @@ public class PlayerDamage : MonoBehaviour
         {
             if (mHealthBar .value > 0 && Time.time> mNextdamage)
             {
-                AudioManager.PlayAudioFile(0);
+                AudioManager.PlayAudioFile(3);
                 mHealthBar.value -= mEnemydamage;
                 mNextdamage = Time.time + mDamagecooldown;
             }
