@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HealthGain : MonoBehaviour
 {
-    private float mAmountgain = 0.201f;
     public PlayerDamage mPlayerDamage;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +16,7 @@ public class HealthGain : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            mPlayerDamage.mHealthBar.value += mAmountgain;
+            mPlayerDamage.mHealthBar.value = 1;
             Destroy(gameObject);
         }
     }
