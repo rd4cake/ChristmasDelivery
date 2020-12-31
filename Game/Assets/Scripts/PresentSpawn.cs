@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PresentSpawn : MonoBehaviour
 {
-    public GameObject mPresent;
+    public GameObject [] mPresent;
     public GameObject mPlayer;
     GameObject mPresentcheck;
+    [HideInInspector]
     public Collider2D[] mColliders;
     public LayerMask mMask;
 
@@ -17,7 +18,8 @@ public class PresentSpawn : MonoBehaviour
         mColliders = Physics2D.OverlapCircleAll(Newpos, 3, mMask);
         if (mPresentcheck == null && mColliders.Length == 0 && (transform.position-mPlayer.transform.position).magnitude>10)
         {
-            Instantiate(mPresent, Newpos, Quaternion.identity);
+            int randGift = Random.Range(0, mPresent.Length - 1);
+            Instantiate(mPresent[randGift], Newpos, Quaternion.identity);
         }
     }
 }
